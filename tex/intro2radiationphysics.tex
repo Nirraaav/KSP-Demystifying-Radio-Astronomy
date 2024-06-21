@@ -2,7 +2,7 @@
 
 \section{Measuring Radiation}
 
-One quantitative measure that astronomers use when observing a light source is the amount of radiation received. Quantifying this amount involves several related but distinct concepts. We discuss these measures below.
+One quantitative measure that astronomers use when observing a light source is the amount of radiation received. Quantifying this amount involves several related but distinct concepts. Some of these measures are enlisted below:
 
 \subsection{Total Energy Emitted}
 
@@ -10,13 +10,14 @@ A source's total light output can be described by the total amount of energy emi
 
 \subsection{Luminosity}
 
-Luminosity (L) or power is the rate at which energy is emitted by a source, expressed in watts (W) or ergs per second (erg s\textsuperscript{-1}). It is calculated by dividing the total emitted energy by the time period over which it was emitted.
+Luminosity ($L$) or power is the rate at which energy is emitted by a source, expressed in watts ($W$) or ergs per second (erg s\textsuperscript{-1}). It is calculated by dividing the total emitted energy by the time period over which it was emitted.
 
 \subsection{Flux}
 
-Flux (F) measures the amount of light energy per unit time per unit area that we detect from a source. It is normalized by dividing the detected power by the effective area of the telescope receiving the radiation. Flux is expressed in units of joules per second per square meter (J s\textsuperscript{-1} m\textsuperscript{-2}) or watts per square meter (W m\textsuperscript{-2}). \\
+Flux ($F$) measures the amount of light energy per unit time per unit area that we detect from a source. It is normalized by dividing the detected power by the effective area of the telescope receiving the radiation. Flux is expressed in units of joules per second per square meter (J s\textsuperscript{-1} m\textsuperscript{-2}) or watts per square meter (W m\textsuperscript{-2}). \\
 
 The relationship between flux and luminosity for an isotropic source at distance \( d \) is given by:
+
 \[ F = \frac{L}{4 \pi d^2} \]
 
 \subsection{Flux Density}
@@ -24,6 +25,7 @@ The relationship between flux and luminosity for an isotropic source at distance
 Flux density ($F_{\nu}$ or $F_{\lambda}$) refers to the flux per unit frequency or wavelength range observed. It is calculated by dividing the detected flux by the frequency or wavelength bandwidth (\( \Delta \nu \) or \( \Delta \lambda \)). Flux density is crucial in characterizing the spectral properties of sources. \\
 
 For radio astronomy, flux density per unit frequency (\( S_{\nu} \)) in janskys (Jy) is a commonly used unit:
+
 \[ 1 \text{ Jy} = 10^{-26} \text{ W m}^{-2} \text{ Hz}^{-1} \]
 
 \subsection{Intensity}
@@ -50,7 +52,7 @@ In summary, astronomers employ various measures such as luminosity, flux, flux d
 
 At the start of the twentieth century, Max Planck's discovery that light's energy is quantized into packets called photons was pivotal. Blackbody radiation, the light emitted by a body that absorbs all incident light, is a key concept. This radiation helps us understand how hot objects cool by emitting light. \\
 
-A blackbody is an idealized object that emits radiation solely based on its temperature, with no reflection or transmission. The interactions between photons and particles within the blackbody result in a thermal equilibrium, where both have the same temperature. \\
+A \textbf{Blackbody} is an idealized object that emits radiation solely based on its temperature, with no reflection or transmission. The interactions between photons and particles within the blackbody result in a thermal equilibrium, where both have the same temperature. \\
 
 Photons are described by Bose–Einstein statistics, which help in determining the distribution of photon energies in thermal equilibrium. The energy distribution function of photons is directly related to the spectrum of emitted light, known as the Planck function:
 
@@ -58,7 +60,6 @@ Photons are described by Bose–Einstein statistics, which help in determining t
 	B_\nu (T) = \frac{2h\nu^3}{c^2} \frac{1}{e^{h\nu/kT} - 1}
 	\label{eq:planckfunctionfrequency}
 \end{equation}
-
 
 where:
 \begin{itemize}
@@ -77,7 +78,7 @@ In the Planck function given in Equation~\eqref{eq:planckfunctionfrequency}, wri
 \end{equation}
 
 
-It is very important to understand and appreciate that, even though \(B_\nu\) and \(B_\lambda\) represent the same concept, they are not the same numerical quantity or even the same function. We discuss in more detail about the difference between these functions later in this section. We first discuss some important features of the Planck function. \\
+It is very important to understand and appreciate that, even though \(B_\nu\) and \(B_\lambda\) represent the same concept, they are not the same numerical quantity or even the same function. \\
 
 Figures~\ref{fig:planckfunctionnu} and~\ref{fig:planckfunctionlambda} display the log-log plots of these functions. Blackbody emission is a continuous spectrum that reaches zero at \(\nu = 0\) (owing to the \(\nu^3\) term), increases to some peak value as \(\nu\) increases, and then decreases and reaches zero again at \(\nu = \infty\) (owing to the exponential term). Note that the Planck function depends only on the body’s temperature and the frequency of the radiation. No other characteristic of the body is relevant. In other words, the intensity of radiation that a blackbody emits at any given frequency depends only on its temperature. \\
 
@@ -108,17 +109,17 @@ where \(\sigma\) is the Stefan-Boltzmann constant. This is an expression of the 
 \nu_\text{max} = 2.82 \frac{kT}{h}
 \]
 
-Finally, it is also useful to calculate the brightness temperature of a source whose intensity is \(I_\nu\). This brightness temperature, \(T_B\), is the temperature at which a blackbody would emit with an intensity equal to \(I_\nu\). That is, it is found by solving for \(T\) in the expression
+It is also useful to calculate the brightness temperature of a source whose intensity is \(I_\nu\). This brightness temperature, \(T_B\), is the temperature at which a blackbody would emit with an intensity equal to \(I_\nu\). That is, it is found by solving for \(T\) in the expression
 
 \[
 I_\nu = B_\nu(T)
 \]
 
-As mentioned above, radio astronomers typically express the Planck function using frequency (\(\nu\)) rather than wavelength (\(\lambda\)). Radio astronomers also express the Planck function in a modified form using temperature units. The brightness temperature of a source whose specific intensity is \(I_\nu\) is defined as the temperature of a blackbody that would emit the same specific intensity, \(T_B\), at the frequency \(\nu\). The Planck function in the Rayleigh–Jeans approximation can be expressed as
+% As mentioned above, radio astronomers typically express the Planck function using frequency (\(\nu\)) rather than wavelength (\(\lambda\)). Radio astronomers also express the Planck function in a modified form using temperature units. The brightness temperature of a source whose specific intensity is \(I_\nu\) is defined as the temperature of a blackbody that would emit the same specific intensity, \(T_B\), at the frequency \(\nu\). The Planck function in the Rayleigh–Jeans approximation can be expressed as
 
-\[
-B_\nu(T) \approx \frac{2\nu^2 kT}{c^2}
-\]
+% \[
+% B_\nu(T) \approx \frac{2\nu^2 kT}{c^2}
+% \]
 
 The brightness temperature of a source with intensity \(I_\nu\) is then
 
@@ -149,13 +150,11 @@ B_\nu (T) \approx \frac{2kT}{\lambda^2}
 \label{eq:rayleigh_jeans_wave}
 \end{equation}
 
-Note how simple this expression is in comparison to the Planck function (Equation~\eqref{eq:planckfunctionfrequency}). This expression is very useful, provided you are in the realm where $\frac{h \nu}{k T} \ll 1$. This expression is known as the Rayleigh--Jeans approximation, often referred to as the Rayleigh--Jeans law.
-
-\clearpage
+We can see how simple this expression is in comparison to the Planck function (Equation~\eqref{eq:planckfunctionfrequency}). This expression is very useful, whenever $\frac{h \nu}{k T} \ll 1$. This expression is known as the Rayleigh--Jeans approximation, often referred to as the Rayleigh-Jeans law.
 
 \section{Brightness Temperature}
 
-Brightness temperature (\( T_B \)) is an important parameter in radio astronomy, providing a convenient way to describe the intensity of radiation using the Rayleigh–Jeans approximation. This approximation shows that at radio wavelengths, the intensity (\( B_\nu(T) \)) of radiation emitted by a blackbody is directly proportional to its temperature (\( T \)), i.e., \( B_\nu(T) \propto T \). \\
+Brightness temperature (\( T_B \)) is an important parameter in radio astronomy, providing a convenient way to describe the intensity of radiation using the Rayleigh-Jeans approximation. This approximation shows that at radio wavelengths, the intensity (\( B_\nu(T) \)) of radiation emitted by a blackbody is directly proportional to its temperature (\( T \)), i.e., \( B_\nu(T) \propto T \). \\
 
 At radio wavelengths, intensity and temperature of blackbody sources can be used interchangeably and are linearly related by \( \frac{2k}{\lambda^2} \). In the Rayleigh–Jeans approximation, the brightness temperature is defined as:
 
@@ -165,7 +164,7 @@ T_B = \frac{\lambda^2}{2k} I_\nu
 
 \( T_B \) is a property of the radiation, not the emitting object. For an opaque thermal source, \( T_B \) directly represents the object's temperature. However, it only equals the source's temperature when the source is both thermal and opaque. \\
 
-At higher frequencies or lower temperatures, where \( h\nu \) is not much smaller than \( kT \), the Rayleigh–Jeans approximation is insufficient. In such cases, the full Planck function must be used:
+At higher frequencies or lower temperatures, where \( h\nu \) is not much smaller than \( kT \), the Rayleigh-Jeans approximation is insufficient. In such cases, the full Planck function must be used:
 
 \[
 I_\nu = B_\nu(T_B) = \frac{2h\nu^3}{c^2} \left( \frac{1}{e^{h\nu/kT_B} - 1} \right)
@@ -174,8 +173,6 @@ I_\nu = B_\nu(T_B) = \frac{2h\nu^3}{c^2} \left( \frac{1}{e^{h\nu/kT_B} - 1} \rig
 Brightness temperature measures intensity and equals the temperature of an opaque thermal source at low frequencies. For non-thermal radiation (e.g., synchrotron radiation), \( T_B \) is not related to the source temperature but still describes radiation intensity. \\
 
 Temperature descriptions for intensity or radiation power also appear in other contexts, such as antenna temperature, noise temperature, receiver temperature, and system temperature, representing power per unit frequency in radio telescope observations. \\
-
-\clearpage
 
 \section{Coherent Radiation}
 
@@ -223,14 +220,11 @@ When waves are in phase (\( \Delta \phi = 0 \)), \( \cos(\Delta \phi) = 1 \), an
 
 In summary, incoherent light results in a total intensity equal to the sum of component intensities, while coherent light's intensity grows as the square of the sum of the component intensities. Despite the differing intensities, the total energies remain conserved, with coherent light having a higher intensity over a smaller wavelength range and a narrower beam.
 
-
-\clearpage
-
 \section{Interference of Light}
 
-Interference of light is crucial for understanding the functioning of radio telescopes. This concept was famously demonstrated by Thomas Young's double-slit experiment, which established the wave nature of light in the early nineteenth century. \\
+Interference of light is an important concept for understanding the functioning of radio telescopes. This concept was famously demonstrated by Thomas Young's double-slit experiment, which established the wave nature of light in the early nineteenth century. \\
 
-The classroom demonstration typically uses a laser beam, which is highly coherent, shining on a double slit. The light from the slits combines to form an interference pattern on a screen. The pattern arises because the path lengths from the two slits to the screen differ, causing phase differences. At the midpoint between the slits, the path lengths are equal, so the phases are the same, resulting in constructive interference and a bright spot. At points offset from the midpoint, the path difference causes destructive interference, creating dark regions or nulls. \\
+% The classroom demonstration typically uses a laser beam, which is highly coherent, shining on a double slit. The light from the slits combines to form an interference pattern on a screen. The pattern arises because the path lengths from the two slits to the screen differ, causing phase differences. At the midpoint between the slits, the path lengths are equal, so the phases are the same, resulting in constructive interference and a bright spot. At points offset from the midpoint, the path difference causes destructive interference, creating dark regions or nulls. \\
 
 A schematic of Young's double-slit experiment and the resulting interference patterns is shown in Figure~\ref{fig:double_slit}. Despite using sunlight, which is not coherent, Young observed interference patterns because he passed the sunlight through a pinhole before the slits, enhancing spatial coherence. 
 
@@ -241,13 +235,11 @@ A schematic of Young's double-slit experiment and the resulting interference pat
     \label{fig:double_slit}
 \end{figure}
 
-Interference patterns do not require all wave chains to be in phase. Each wave chain passing through the slits produces its own interference pattern. The total intensity pattern is the sum of these individual patterns. However, a range of frequencies or directions degrades the pattern, leading to partial coherence. Laser beams exhibit high spatial and temporal coherence, but no source is perfectly coherent. \\
+% Interference patterns do not require all wave chains to be in phase. Each wave chain passing through the slits produces its own interference pattern. The total intensity pattern is the sum of these individual patterns. However, a range of frequencies or directions degrades the pattern, leading to partial coherence. Laser beams exhibit high spatial and temporal coherence, but no source is perfectly coherent. \\
 
 Young used a pinhole to create wave fronts from a single point, ensuring high spatial coherence. Despite sunlight being blackbody radiation with all wavelengths, the human eye's limited wavelength sensitivity allowed Young to see the interference pattern, effectively filtering the light by wavelength. \\
 
 Using coherent light sources in double-slit demonstrations simplifies observing well-defined nulls and peaks. However, understanding that partial coherence can still produce interference patterns is essential in radio astronomy. Observations involve a range of wavelengths and sources with finite spatial coherence, and the phases of the radiation are usually random. This understanding is crucial for appreciating the resolution limits of radio telescopes and the technique of interferometry or aperture synthesis.
-
-\clearpage
 
 \section{Polarization of Light}
 
