@@ -14,21 +14,21 @@ Luminosity (L) or power is the rate at which energy is emitted by a source, expr
 
 \subsection{Flux}
 
-Flux (F) measures the amount of light energy per unit time per unit area that we detect from a source. It is normalized by dividing the detected power by the effective area of the telescope receiving the radiation. Flux is expressed in units of joules per second per square meter (J s\textsuperscript{-1} m\textsuperscript{-2}) or watts per square meter (W m\textsuperscript{-2}).
+Flux (F) measures the amount of light energy per unit time per unit area that we detect from a source. It is normalized by dividing the detected power by the effective area of the telescope receiving the radiation. Flux is expressed in units of joules per second per square meter (J s\textsuperscript{-1} m\textsuperscript{-2}) or watts per square meter (W m\textsuperscript{-2}). \\
 
 The relationship between flux and luminosity for an isotropic source at distance \( d \) is given by:
 \[ F = \frac{L}{4 \pi d^2} \]
 
 \subsection{Flux Density}
 
-Flux density ($F_{\nu}$ or $F_{\lambda}$) refers to the flux per unit frequency or wavelength range observed. It is calculated by dividing the detected flux by the frequency or wavelength bandwidth (\( \Delta \nu \) or \( \Delta \lambda \)). Flux density is crucial in characterizing the spectral properties of sources.
+Flux density ($F_{\nu}$ or $F_{\lambda}$) refers to the flux per unit frequency or wavelength range observed. It is calculated by dividing the detected flux by the frequency or wavelength bandwidth (\( \Delta \nu \) or \( \Delta \lambda \)). Flux density is crucial in characterizing the spectral properties of sources. \\
 
 For radio astronomy, flux density per unit frequency (\( S_{\nu} \)) in janskys (Jy) is a commonly used unit:
 \[ 1 \text{ Jy} = 10^{-26} \text{ W m}^{-2} \text{ Hz}^{-1} \]
 
 \subsection{Intensity}
 
-Intensity $I_{\nu}$ or $I_{\lambda}$, also known as specific intensity or surface brightness, is the flux density per unit solid angle. It measures the amount of energy radiated per second per unit area per unit solid angle of the source. Intensity is independent of distance and provides insights into the microscopic radiation processes of the emitting object.
+Intensity $I_{\nu}$ or $I_{\lambda}$, also known as specific intensity or surface brightness, is the flux density per unit solid angle. It measures the amount of energy radiated per second per unit area per unit solid angle of the source. Intensity is independent of distance and provides insights into the microscopic radiation processes of the emitting object. \\
 
 The relationship between flux density and intensity is:
 \[ I_\nu = \frac{F_\nu}{\Omega} \]
@@ -41,7 +41,7 @@ Intensity is related to the electric field strength of the radiation waves via t
 
 \[ I_\nu \propto E_0^2 \]
 
-This relationship underscores the fundamental connection between the electromagnetic wave properties and the measurable quantities of radiation intensity.
+This relationship underscores the fundamental connection between the electromagnetic wave properties and the measurable quantities of radiation intensity. \\
 
 In summary, astronomers employ various measures such as luminosity, flux, flux density, and intensity to quantitatively describe the amount of radiation emitted by astronomical sources. Each measure provides unique insights into the nature and properties of celestial objects across different wavelength regimes.
 
@@ -179,9 +179,9 @@ Temperature descriptions for intensity or radiation power also appear in other c
 
 \section{Coherent Radiation}
 
-The radio-wavelength radiation emitted by an individual electron is undetectable by any radio telescope; what we detect is the sum of emissions from many electrons. There are two main ways electromagnetic waves from different electrons can combine, which significantly affects how we treat the radiation mathematically and its physical properties.
+The radio-wavelength radiation emitted by an individual electron is undetectable by any radio telescope; what we detect is the sum of emissions from many electrons. There are two main ways electromagnetic waves from different electrons can combine, which significantly affects how we treat the radiation mathematically and its physical properties. \\
 
-Imagine a single electron oscillating at a fixed frequency, emitting electromagnetic waves at a single wavelength. If multiple wave chains, all in phase, join this initial chain, they amplify the initial wave constructively, resulting in coherent radiation. This is similar to what happens in a laser.
+Imagine a single electron oscillating at a fixed frequency, emitting electromagnetic waves at a single wavelength. If multiple wave chains, all in phase, join this initial chain, they amplify the initial wave constructively, resulting in coherent radiation. This is similar to what happens in a laser. \\
 
 In contrast, incoherent radiation occurs when many unrelated electrons emit radiation independently, as in an incandescent light bulb. The resulting waves have random phases and cannot be modeled by a single chain of sine waves.
 
@@ -219,7 +219,7 @@ The total intensity is:
 I_{\text{total}} = \alpha (E_1 + E_2)^2 = \alpha E_0^2 \left[1 + \cos(\Delta \phi)\right]
 \]
 
-When waves are in phase (\( \Delta \phi = 0 \)), \( \cos(\Delta \phi) = 1 \), and the total intensity is four times that of an individual wave. For incoherent light, the interference term averages to zero, resulting in the total intensity being the sum of individual intensities.
+When waves are in phase (\( \Delta \phi = 0 \)), \( \cos(\Delta \phi) = 1 \), and the total intensity is four times that of an individual wave. For incoherent light, the interference term averages to zero, resulting in the total intensity being the sum of individual intensities. \\
 
 In summary, incoherent light results in a total intensity equal to the sum of component intensities, while coherent light's intensity grows as the square of the sum of the component intensities. Despite the differing intensities, the total energies remain conserved, with coherent light having a higher intensity over a smaller wavelength range and a narrower beam.
 
@@ -228,9 +228,62 @@ In summary, incoherent light results in a total intensity equal to the sum of co
 
 \section{Interference of Light}
 
+Interference of light is crucial for understanding the functioning of radio telescopes. This concept was famously demonstrated by Thomas Young's double-slit experiment, which established the wave nature of light in the early nineteenth century. \\
+
+The classroom demonstration typically uses a laser beam, which is highly coherent, shining on a double slit. The light from the slits combines to form an interference pattern on a screen. The pattern arises because the path lengths from the two slits to the screen differ, causing phase differences. At the midpoint between the slits, the path lengths are equal, so the phases are the same, resulting in constructive interference and a bright spot. At points offset from the midpoint, the path difference causes destructive interference, creating dark regions or nulls. \\
+
+A schematic of Young's double-slit experiment and the resulting interference patterns is shown in Figure~\ref{fig:double_slit}. Despite using sunlight, which is not coherent, Young observed interference patterns because he passed the sunlight through a pinhole before the slits, enhancing spatial coherence. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/double_slit.png} 
+    \caption{Schematic representation of Young’s double-slit experiment is shown on the left and the display of the bright and dark lines that appear on the screen due to interference is shown on the right.}
+    \label{fig:double_slit}
+\end{figure}
+
+Interference patterns do not require all wave chains to be in phase. Each wave chain passing through the slits produces its own interference pattern. The total intensity pattern is the sum of these individual patterns. However, a range of frequencies or directions degrades the pattern, leading to partial coherence. Laser beams exhibit high spatial and temporal coherence, but no source is perfectly coherent. \\
+
+Young used a pinhole to create wave fronts from a single point, ensuring high spatial coherence. Despite sunlight being blackbody radiation with all wavelengths, the human eye's limited wavelength sensitivity allowed Young to see the interference pattern, effectively filtering the light by wavelength. \\
+
+Using coherent light sources in double-slit demonstrations simplifies observing well-defined nulls and peaks. However, understanding that partial coherence can still produce interference patterns is essential in radio astronomy. Observations involve a range of wavelengths and sources with finite spatial coherence, and the phases of the radiation are usually random. This understanding is crucial for appreciating the resolution limits of radio telescopes and the technique of interferometry or aperture synthesis.
+
 \clearpage
 
 \section{Polarization of Light}
+
+The direction of the electric field in an electromagnetic wave is described by its polarization. For waves traveling along the \(+z\)-axis, the electric field (\(\vec{E}\)) oscillates perpendicular to the direction of travel, typically in the \(xy\)-plane, with the magnetic field (\(\vec{B}\)) perpendicular to both \(\vec{E}\) and the direction of travel.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Images/polarization_wave.png}
+    \caption{Propagation of plane electromagnetic waves along the z-axis with the electric field oscillating along the y-axis.}
+    \label{fig:polarization_wave}
+\end{figure}
+
+The electric field can oscillate in any direction within the \(xy\)-plane, affecting electrons differently based on their movement constraints. An electron constrained to move vertically will only be accelerated by vertically polarized waves.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Images/polarization_electron.png}
+    \caption{An electron moving vertically is accelerated by vertically polarized waves but unaffected by horizontally polarized waves.}
+    \label{fig:polarization_electron}
+\end{figure}
+
+Any electric field vector can be described by its components along the \(x\)- and \(y\)-axes (horizontal and vertical polarization).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{Images/polarization_components.png}
+    \caption{Total electric field vector described by its x- and y-components.}
+    \label{fig:polarization_components}
+\end{figure}
+
+When the \(x\)- and \(y\)-components are out of phase, the total electric field vector rotates, leading to different polarization types:
+\begin{enumerate}
+	\item \textbf{Linear polarization}: \(\vec{E}\) oscillates in a fixed direction.
+	\item \textbf{Circular polarization}: \(\vec{E}\) rotates with constant magnitude, describing a circle.
+	\item \textbf{Elliptical polarization}: \(\vec{E}\) describes an ellipse.
+\end{enumerate}
 
 \clearpage
 
@@ -259,7 +312,7 @@ The Hydrogen $21$cm line is a very important spectral line important in radio as
 
 The $21$cm line is used to study the rotation curve of galaxies. The rotation curve of a galaxy is a plot of the orbital velocity of the stars and gas in the galaxy as a function of the distance from the center of the galaxy. The rotation curve of a galaxy is important in studying the mass distribution of the galaxy. The rotation curve of a galaxy is used to study the dark matter distribution in the galaxy. \\
 
-To obtain the galaxy rotation curve, we will use synthetic spectra available for different spectrums of different distance intervals within that is a Hydrogen 21 cm line at a Doppler velocity. We fit for the Doppler velocity of the 21 cm line for each distance. To do so, we fit a gaussian to the spectral line and determine the central frequency. We Use the displacement from the expected value to find the velocity. Once all lines are done, plot the velocities as a function of distance from the centre of our galaxy.
+To obtain the galaxy rotation curve, we will use synthetic spectra available for different spectrums of different distance intervals within that is a Hydrogen 21 cm line at a Doppler velocity. We fit for the Doppler velocity of the 21 cm line for each distance. To do so, we fit a gaussian to the spectral line and determine the central frequency. We use the displacement from the expected value to find the velocity. Once all lines are done, plot the velocities as a function of distance from the centre of our galaxy.
 
 \begin{figure}[H]
 	\centering
