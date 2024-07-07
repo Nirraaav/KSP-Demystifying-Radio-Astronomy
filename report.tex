@@ -1,0 +1,24 @@
+\documentclass{report}
+\usepackage{nirav}
+
+\newcommand{\myname}{Nirav Bhattad}
+\newcommand{\topicname}{KSP Midterm Report}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\titleBC
+\tableofcontents
+\clearpage
+
+\include{tex/intro2radioastronomy}
+\include{tex/intro2radiationphysics}
+\include{tex/radiotelescopes}
+
+\nocite{*}
+\bibliographystyle{alpha}
+\bibliography{references}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\end{document}

@@ -1,0 +1,13 @@
+imagename = 'twhya_cont.image'
+pbimage   = 'twhya_cont.pb'
+outfile   = 'twhya_cont.pbcor.image'
+box       = ''
+region    = ''
+chans     = ''
+stokes    = ''
+mask      = ''
+mode      = 'divide'
+cutoff    = -1.0
+overwrite = False
+stretch   = False
+#impbcor( imagename='twhya_cont.image',pbimage='twhya_cont.pb',outfile='twhya_cont.pbcor.image',box='',region='',chans='',stokes='',mask='',mode='divide',cutoff=-1.0,overwrite=False,stretch=False )

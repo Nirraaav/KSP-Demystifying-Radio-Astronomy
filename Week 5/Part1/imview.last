@@ -1,0 +1,6 @@
+raster  = 'twhya_cont.pbcor.image'
+contour = {}
+zoom    = 1
+axes    = {}
+out     = ''
+#imview( raster='twhya_cont.pbcor.image',contour={},zoom=1,axes={},out='' )
