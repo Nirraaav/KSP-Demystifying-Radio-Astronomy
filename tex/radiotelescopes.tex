@@ -45,10 +45,10 @@ In conclusion, the efficiency and effectiveness of a radio telescope depend on t
 The purposes of the radio telescope receiver are to define the frequency range, or passband, over which the received power will be collected, and to produce a signal proportional to the collected power that can be recorded. The components that make up a receiver are often divided between two separate sections referred to as the front-end receiver and the back-end receiver.
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Images/telescope_components.png}
-	\caption{Components of a radio telescope receiver.}
-	\label{fig:telescope_components}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/telescope_components.png}
+    \caption{Components of a radio telescope receiver.}
+    \label{fig:telescope_components}
 \end{figure}
 
 \subsection{Transmission Lines}
@@ -88,3 +88,39 @@ The back-end receiver processes the IF signal received from the front-end. Compo
 \subsection{High-Frequency Heterodyne Receivers}
 
 At frequencies above 300 GHz, special high-frequency heterodyne receivers are used. These receivers mix the RF signal with the IF first, then amplify the IF signal. They require low-noise components and are often based on superconducting materials.
+
+\section{Noise, Noise Temperature, and Antenna Temperature}
+
+Components in a receiver generate electrical signals, termed \textit{noise}, which interfere with the detection of astronomical signals. This noise is often characterized by an equivalent temperature, $T_{\text{equiv}}$, defined as:
+
+\begin{equation}
+    T_{\text{equiv}} = \frac{P}{k \Delta \nu}
+\end{equation}
+
+where $k$ is Boltzmann's constant and $\Delta \nu$ is the bandwidth. The equivalent temperature of the power delivered by the antenna is the \textit{antenna temperature}, $T_A$, while the total noise power is described by the \textit{noise temperature}, $T_N$. \\
+
+When a signal passes through an amplifier, it is amplified by a gain factor, $G$. For a system with an amplifier of gain $G_1$ and noise temperature $T_{N1}$, the output power is:
+
+\begin{equation}
+    P = G_1 k \Delta \nu (T_A + T_{N1})
+\end{equation}
+
+For two amplifiers in succession, with gains $G_1$ and $G_2$, and noise temperatures $T_{N1}$ and $T_{N2}$ respectively, the total noise temperature is:
+
+\begin{equation}
+    T_N = T_{N1} + \frac{T_{N2}}{G_1}
+\end{equation}
+
+In general, for many components in succession:
+
+\begin{equation}
+    G = G_1 G_2 G_3 \ldots
+\end{equation}
+
+and
+
+\begin{equation}
+    T_N = T_{N1} + \frac{T_{N2}}{G_1} + \frac{T_{N3}}{G_1 G_2} + \ldots
+\end{equation}
+
+The first RF amplifier is critical in determining the total noise temperature because its gain reduces the noise contributions of subsequent components. Therefore, low-noise, high-gain RF amplifiers are crucial, and these are often cooled to near 4 K to minimize thermal noise. \\
