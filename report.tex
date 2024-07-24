@@ -1,20 +1,25 @@
 \documentclass{report}
-\usepackage{nirav}
+\usepackage{nirav-sos}
 
 \newcommand{\myname}{Nirav Bhattad}
-\newcommand{\topicname}{KSP Midterm Report}
+\newcommand{\mentorname}{Atreyi Dasgupta \& Mehul Goyal}
+\newcommand{\topicname}{Demystifying Radio Astronomy}
+\newcommand{\reportname}{Krittika Summer Projects (KSP)}
 
 \begin{document}
 
 \thispagestyle{empty}
 
-\titleBC
+\titleSOS
+\clearpage
 \tableofcontents
 \clearpage
 
-\include{tex/intro2radioastronomy}
-\include{tex/intro2radiationphysics}
-\include{tex/radiotelescopes}
+\input{tex/intro2radioastronomy}
+\input{tex/intro2radiationphysics}
+\input{tex/radiotelescopes}
+\input{tex/casa}
+\input{tex/mcmc}
 
 \nocite{*}
 \bibliographystyle{alpha}
