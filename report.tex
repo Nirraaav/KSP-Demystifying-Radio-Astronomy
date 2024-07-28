@@ -1,4 +1,5 @@
 \documentclass{report}
+\usepackage{titlesec}
 \usepackage{nirav-sos}
 
 \newcommand{\myname}{Nirav Bhattad}
@@ -6,15 +7,27 @@
 \newcommand{\topicname}{Demystifying Radio Astronomy}
 \newcommand{\reportname}{Krittika Summer Projects (KSP)}
 
+% Format the abstract title
+\titleformat{\abstractname}[block]{\normalfont\HUGE\bfseries}{\abstractname}{1em}{}
+
 \begin{document}
 
 \thispagestyle{empty}
-
 \titleSOS
 \clearpage
+
+\thispagestyle{empty}
+\begin{abstract}
+    This report presents an overview of radio astronomy, including fundamental concepts in radiation physics, the operation and application of radio telescopes, and the use of CASA software for data analysis. Additionally, it explores the application of Markov Chain Monte Carlo (MCMC) methods in analyzing radio astronomical data. The objective is to provide a comprehensive understanding of radio astronomy and the tools and techniques used in this field. This work is part of the Krittika Summer Projects (KSP) program.
+\end{abstract}
+\clearpage
+
+\thispagestyle{empty}
 \tableofcontents
 \clearpage
 
+\thispagestyle{plain} % Resume normal page numbering
+\setcounter{page}{1}
 \input{tex/intro2radioastronomy}
 \input{tex/intro2radiationphysics}
 \input{tex/radiotelescopes}
